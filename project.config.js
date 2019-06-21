@@ -14,9 +14,8 @@
    ====================================================== */
 const NODE_ENV = process.env.NODE_ENV || 'development'
 const path     = require('path')
-const cp       = require('child_process')
 const proxy    = require('./proxy.config')
-const branch   = cp.execSync('git rev-parse --abbrev-ref HEAD').toString().replace(/\s+/, '')
+const branch   = fs.existsSync(path.join(__dirname, '.git')) ? fs.readFileSync(path.resolve(__dirname, '.git', 'HEAD'), 'utf-8').trim().split(': ')[1].split('/')[2] : 'master'
 
 module.exports = {
     theme: {
