@@ -13,6 +13,7 @@
 
    ====================================================== */
 const NODE_ENV = process.env.NODE_ENV || 'development'
+const fs       = require('fs')
 const path     = require('path')
 const proxy    = require('./proxy.config')
 const branch   = fs.existsSync(path.join(__dirname, '.git')) ? fs.readFileSync(path.resolve(__dirname, '.git', 'HEAD'), 'utf-8').trim().split(': ')[1].split('/')[2] : 'master'
