@@ -1,6 +1,7 @@
 {
-  "name": "react-redux-starter-kit",
-  "version": "2.0.0",
+  "name": "rs-admin-cli",
+  "version": "0.0.1",
+  "description": "Background management system automation command line interface",
   "author": "jines-z <zhengaojin@live.cn> (https://github.com/jines-z)",
   "scripts": {
     "start": "cross-env NODE_ENV=development rs-compiler start",
