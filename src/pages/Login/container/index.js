@@ -8,7 +8,7 @@ import service from '@/service'
 import * as ROOT_action from '@/store/ROOT/action'
 import * as action from '@/store/Login/action'
 import FormBox from '../components/FormBox'
-import './index.less'
+import '../index.less'
 
 @connect(
     state => ({ ...state.Login }),
