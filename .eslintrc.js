@@ -1,21 +1,6 @@
 module.exports = {
     root: true,
     parser: 'babel-eslint',
-    env: {
-        browser : true,
-        commonjs: true,
-        es6     : true
-    },
-    extends: [
-        'standard',
-        'plugin:react/recommended'
-    ],
-    globals: {
-        window    : true,
-        document  : true,
-        __ENV__   : true,
-        __BRANCH__: true
-    },
     parserOptions: {
         sourceType  : 'module',
         ecmaVersion : 6,
@@ -23,6 +8,21 @@ module.exports = {
             jsx: true
         }
     },
+    env: {
+        browser : true,
+        commonjs: true,
+        es6     : true
+    },
+    globals: {
+        window    : true,
+        document  : true,
+        __ENV__   : true,
+        __BRANCH__: true
+    },
+    extends: [
+        'standard',
+        'plugin:react/recommended'
+    ],
     plugins: [
         'standard'
     ],
@@ -59,9 +59,9 @@ module.exports = {
         'no-debugger'                       : process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-console'                        : process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'react/prop-types'                  : 'off',
-        "react/no-array-index-key"          : 'off',
+        'react/no-array-index-key'          : 'off',
         'react/jsx-closing-bracket-location': 'error',
-        "react/self-closing-comp"           : ['error', { 'component': true, 'html': false }],
+        'react/self-closing-comp'           : ['error', { 'component': true, 'html': false }],
         'react/jsx-tag-spacing'             : ['error', { 'beforeSelfClosing': 'always' }]
     }
 }

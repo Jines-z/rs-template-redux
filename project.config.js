@@ -31,7 +31,7 @@ module.exports = {
     },
     html: {
         title: 'RS-ADMIN-CLI',
-        fav: 'https://jines-z.github.io/images/favicon.ico'
+        fav  : 'https://jines-z.github.io/images/favicon.ico'
     },
     proxy,
     global     : { env: NODE_ENV, branch },
