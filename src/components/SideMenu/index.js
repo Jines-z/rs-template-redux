@@ -11,11 +11,11 @@ class SideMenu extends Component {
         keys: []
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.selectKey()
     }
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (this.props.location.pathname != nextProps.location.pathname) {
             this.selectKey()
         }

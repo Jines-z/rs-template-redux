@@ -24,7 +24,8 @@ module.exports = {
         'plugin:react/recommended'
     ],
     plugins: [
-        'standard'
+        'standard',
+        'react-hooks'
     ],
     settings: {
         'import/resolver': {
@@ -35,8 +36,8 @@ module.exports = {
                 ]
             }
         },
-        'react': {
-            'version': '16.2.0'
+        react: {
+            version: 'detect'
         }
     },
     rules: {
@@ -62,6 +63,8 @@ module.exports = {
         'react/no-array-index-key'          : 'off',
         'react/jsx-closing-bracket-location': 'error',
         'react/self-closing-comp'           : ['error', { 'component': true, 'html': false }],
-        'react/jsx-tag-spacing'             : ['error', { 'beforeSelfClosing': 'always' }]
+        'react/jsx-tag-spacing'             : ['error', { 'beforeSelfClosing': 'always' }],
+        'react-hooks/rules-of-hooks'        : 'error',
+        'react-hooks/exhaustive-deps'       : 'warn'
     }
 }

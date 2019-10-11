@@ -18,7 +18,7 @@ class Loading extends Component {
         }
     }
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (this.props.location.pathname != nextProps.location.pathname) {
             this.props.ROOT_ChangeLoading(true)
         }
