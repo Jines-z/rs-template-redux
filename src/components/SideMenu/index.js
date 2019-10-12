@@ -8,7 +8,7 @@ const SubMenu = Menu.SubMenu
 @withRouter
 class SideMenu extends Component {
     state = {
-        keys: []
+        keys: ['/']
     }
 
     componentDidMount() {
