@@ -1,6 +1,6 @@
 module.exports = {
-    '/mock': {
-        target: 'https://www.easy-mock.com',
+    '/app': {
+        target: 'http://rap2.taobao.org:38080',
         secure: false,
         changeOrigin: true
     }

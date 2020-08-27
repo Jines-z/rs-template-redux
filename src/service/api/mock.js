@@ -1,5 +1,6 @@
-const domain = __ENV__ === 'production' ? 'https://www.easy-mock.com' : ''
+// 实例代码，在真实场景中一般不需要把域名写死
+const url = __ENV__ === 'production' ? 'http://rap2.taobao.org:38080' : ''
 
 export default {
-    LOGIN: `${domain}/mock/5c4989d06498891c5bff820d/rsk/login`
+    LOGIN: `${url}/app/mock/265116/login`
 }
