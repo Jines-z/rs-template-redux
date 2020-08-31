@@ -28,8 +28,8 @@ module.exports = {
         'primary-color'       : '#495060',
         'menu-dark-bg'        : '#495060',
         'menu-dark-submenu-bg': '#363e4f',
-        'normal-color'        : '#282C32',
-        'text-color'          : '#282C32',
+        'normal-color'        : '#282c32',
+        'text-color'          : '#282c32',
         'border-radius-base'  : '2px',
         'border-radius-sm'    : '2px',
         'font-family'         : 'Microsoft YaHei'
